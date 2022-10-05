@@ -1,12 +1,18 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-  images: {
-    loader: 'akamai',
-    path: '',
-  },
-  assetPrefix: './',
-}
 
-module.exports = nextConfig
+const path = require('path');
+
+const nextConfig = {
+    reactStrictMode: true,
+    swcMinify: true,
+    images: {
+        loader: "akamai",
+        path: "",
+    },
+    assetPrefix: "./",
+    sassOptions: {
+        includePaths: [path.join(__dirname, 'styles')],
+    }
+};
+
+module.exports = nextConfig;

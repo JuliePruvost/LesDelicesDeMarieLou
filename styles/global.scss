@@ -1,0 +1,42 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+$jp-primary-color: rgb(56, 73, 80);
+$jp-primary-dark-color: black;
+$jp-primary-dark-contrast-color: darken(white, 10);
+$jp-accent-color: rgb(231, 18, 185);
+
+
+:root {
+    --primary-color: #{$jp-primary-color};
+    --primary-color-l10: #{lighten($jp-primary-color, 10)};
+    --primary-color-l20: #{lighten($jp-primary-color, 20)};
+    --primary-color-l30: #{lighten($jp-primary-color, 30)};
+    --primary-dark-color: #{$jp-primary-dark-color};
+    --primary-dark-contrast-color: #{$jp-primary-dark-contrast-color};
+    --accent-color: #{$jp-accent-color};
+}

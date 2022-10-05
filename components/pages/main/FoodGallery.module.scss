@@ -1,0 +1,21 @@
+.foodGalleryWrapper {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.foodGalleryLayout {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.foodGalleryLayoutRow {
+    display: flex;
+    flex-direction: row;
+    gap: 4vh ;
+}
+
+.foodGalleryLayoutRowItem {
+    flex: 1 1 0;
+}

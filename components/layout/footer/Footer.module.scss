@@ -1,0 +1,39 @@
+
+
+.footer {
+    margin-top: auto;
+    padding: 24px;
+    background-color: var(--primary-dark-color);
+    color: var(--primary-dark-contrast-color);;
+    font-size: small;
+}
+
+.footerContent {
+    padding: 24px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footerSocialContent {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.footerSocialIcon {
+    width: 32px;
+    height: 32px;
+    fill: var(--primary-dark-contrast-color);
+}
+
+.footerInformation {
+    ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+}

@@ -1,0 +1,18 @@
+.imageContainer {
+    display: flex;
+    flex-direction: column;
+
+    > span {
+        position: unset !important;
+    }
+
+    .image {
+        object-fit: cover;
+        width: 100% !important;
+        position: relative !important;
+        height: unset !important;
+    }
+}
+
+
+
