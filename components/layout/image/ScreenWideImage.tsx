@@ -26,7 +26,7 @@ const ScreenWideImage = ({width, maxWidth, height, maxHeight, ...props}: ImagePr
 
     return (
         <div className={styles.imageContainer} style={containerStyle}>
-            <NextImage className={styles.image} {...nextImageProps} 
+            <NextImage className={styles.image} {...nextImageProps} priority
             />
         </div>
     );

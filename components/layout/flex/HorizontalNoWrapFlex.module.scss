@@ -1,0 +1,9 @@
+.horizontalNoWrapFlex {
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+}
+
+.flexItemWithBaseSize {
+    flex: 1 1 0;
+}

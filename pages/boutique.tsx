@@ -1,8 +1,12 @@
 import type { NextPage } from 'next'
+import ContentWrapper from '../components/layout/wrappers/ContentWrapper';
+import BoutiqueDescription from '../components/pages/boutique/BoutiqueDescription';
 
 const BoutiquePage: NextPage = () => {
     return (
-        <div>La boutique</div>
+        <ContentWrapper>
+            <BoutiqueDescription />
+        </ContentWrapper>
     );
 }
 

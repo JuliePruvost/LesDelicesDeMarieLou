@@ -1,8 +1,12 @@
 import type { NextPage } from 'next'
+import ContentWrapper from '../components/layout/wrappers/ContentWrapper';
+import MarcheDescription from '../components/pages/marche/MarcheDescription';
 
 const MarchePage: NextPage = () => {
     return (
-        <div>Vous pouvez nous trouver au marché de Puteaux tous les dimanches</div>
+        <ContentWrapper>
+            <MarcheDescription />
+        </ContentWrapper>
     );
 }
 
