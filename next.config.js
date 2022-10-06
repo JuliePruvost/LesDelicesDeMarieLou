@@ -9,7 +9,7 @@ const nextConfig = {
         loader: "akamai",
         path: "",
     },
-    assetPrefix: "./",
+    assetPrefix: "/LesDelicesDeMarieLou/",
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
     }
