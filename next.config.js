@@ -2,6 +2,10 @@
 
 const path = require('path');
 
+const repo = 'LesDelicesDeMarieLou'
+const assetPrefix = `/${repo}/`
+const basePath = `/${repo}`
+
 const nextConfig = {
     reactStrictMode: true,
     swcMinify: true,
@@ -9,8 +13,8 @@ const nextConfig = {
         loader: "akamai",
         path: "",
     },
-    assetPrefix: "./",
-    basePath: '/LesDelicesDeMarieLou',
+    assetPrefix: assetPrefix,
+    basePath: basePath,
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
     }
