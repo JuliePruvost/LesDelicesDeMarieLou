@@ -63,10 +63,26 @@ export default function Footer() {
                 <div className={styles.footerInformation} style={{marginLeft: '4vh'}}>
                     <ul>
                         <li>
+                            Boutique
+                        </li>
+                        <li>
                             Lundi au Vendredi
                         </li>
                         <li>
                             10h - 15h
+                        </li>
+                    </ul>
+                </div>
+                <div className={styles.footerInformation} style={{marginLeft: '4vh'}}>
+                    <ul>
+                        <li>
+                            Marhé Puteaux Chantecoq
+                        </li>
+                        <li>
+                            Dimanche
+                        </li>
+                        <li>
+                            8h - 13h
                         </li>
                     </ul>
                 </div>

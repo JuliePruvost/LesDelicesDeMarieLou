@@ -4,7 +4,7 @@ import Marker from "./MapMarker";
 
 export default function MapWrapper({position, zoom}: {position: google.maps.LatLng|null|google.maps.LatLngLiteral, zoom: number}) {
     return (
-        <Wrapper apiKey={"AIzaSyBJHPDfhvexYER3fnLPq3pOZZhYgetU8K"}>
+        <Wrapper apiKey={"AIzaSyBJHPDfhvexYER3fnLPq3pOZZhYgetU8Kk"}>
             <Map center={position} zoom={zoom} style={{ flexGrow: "1", height: "100%" }}>
                 <Marker position={position} />
             </Map>
