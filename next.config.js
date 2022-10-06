@@ -10,6 +10,7 @@ const nextConfig = {
         path: "",
     },
     assetPrefix: "/LesDelicesDeMarieLou/",
+    basePath: '/LesDelicesDeMarieLou',
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
     }
