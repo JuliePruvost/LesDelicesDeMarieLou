@@ -80,6 +80,8 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./out
+      - name: Creates nojekyll file # Creates a file telling Github not to build the project using Jekyll
+        run: touch out/.nojekyll
 
   # Deployment job
   deploy:
