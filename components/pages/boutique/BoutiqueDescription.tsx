@@ -16,8 +16,8 @@ const zoom = 16.25;
 export default function BoutiqueDescription() {
     return (
         <>
-            <div>
-                <Image src={boutique} alt="La cuisine" priority />
+            <div style={{width:'100%'}}>
+                <Image src={boutique} alt="La cuisine" priority width='100%' />
             </div>
             <HorizontalNoWrapFlex>
                 <div className={flexStyles.flexItemWithBaseSize} >

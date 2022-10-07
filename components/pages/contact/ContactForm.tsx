@@ -57,7 +57,7 @@ export default function ContactForm() {
             </Form.Group>
             <div className="d-grid">
                 <Button type="submit" disabled={loading} className={styles.button}>
-                    {loading ? <>{spinner} Sending...</> : 'Send'}
+                    {loading ? <>{spinner} Envoi...</> : 'Envoyer'}
                 </Button>
             </div>
         </Form>

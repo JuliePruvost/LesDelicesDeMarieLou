@@ -3,8 +3,6 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import ScreenWideImage from "../components/layout/image/ScreenWideImage";
 import ContentWrapper from "../components/layout/wrappers/ContentWrapper";
-import FoodGallery from "../components/pages/main/FoodGallery";
-import LesDelicesDescription from "../components/pages/main/LesDelicesDescription";
 import boutique_large from '/public/boutique_large.jpeg'
 
 const Home: NextPage = () => {
@@ -28,7 +26,8 @@ const Home: NextPage = () => {
                     src={boutique_large}
                     alt="accueil les delices de marie lou"
                     maxHeight="400px"
-                    objectPosition="50% 20%"
+                    objectFit="cover"
+                    objectPosition="0 0"
                 />
                 <ContentWrapper>
                     <MainView />

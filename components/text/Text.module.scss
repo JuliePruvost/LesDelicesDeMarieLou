@@ -10,6 +10,9 @@
     @media screen and (max-width: 480px) {
         font-size: 0.8em;
     }
+    @media screen and (max-width: 400px) {
+        font-size: 0.6em;
+    }
 }
 
 .description {
@@ -20,6 +23,9 @@
     }
     @media screen and (max-width: 480px) {
         font-size: 0.8em;
+    }
+    @media screen and (max-width: 400px) {
+        font-size: 0.6em;
     }
 }
 
@@ -35,11 +41,17 @@
     text-align: left;
     // color: var(--primary-color);
     font-size: larger;
-    font-weight: bolder;
+    font-weight: 500;
     // text-decoration: underline;
     // text-decoration-color: var(--accent-color);
-    text-decoration-thickness: 1px;
-    text-underline-offset: 12px;
-    margin-bottom: 2vh;
 
+    @media screen and (max-width: 600px) {
+        font-size: 1.2em;
+    }
+    @media screen and (max-width: 480px) {
+        font-size: 1em;
+    }
+    @media screen and (max-width: 400px) {
+        font-size: 0.8em;
+    }
 }

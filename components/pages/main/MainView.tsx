@@ -7,8 +7,10 @@ export default function MainView() {
         <>
             <SectionTitle content="Saveurs antillaises" />
             <LesDelicesDescription />
-            <SectionTitle content="Gallerie" />
+            <SectionTitle content="Gallerie Photo" />
             <FoodGallery />
+            <div>Vous trouverez des photos plus récentes sur notre <a href="https://www.instagram.com/lesdelicesdemari_lou/" target="_blank"
+                rel="noopener noreferrer" title="Instagram (link opens in a new tab)">Instagram</a></div>
         </>
     );
 }

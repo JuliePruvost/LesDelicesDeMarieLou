@@ -26,7 +26,7 @@ export default function NavigationBar() {
     const MainNavigationItem = () => {
         const routeDescription = routeDescriptions[0];
         return (
-            <Navbar.Brand>
+            <Navbar.Brand style={{justifyContent: "center"}}>
                 <Link href={routeDescription.path!} passHref>
                     <Nav.Link active={router.pathname === routeDescription.path} className={styles.mainNavItem}>
                         <MainLogo width="181.56" height='72.947' />
@@ -54,16 +54,18 @@ export default function NavigationBar() {
         });
 
     return (
-        <Navbar expand="sm" expanded={expanded}>
-            <Container>
-                <MainNavigationItem />
-                <Navbar.Toggle onClick={onToggleClick} aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse key='collapseableNavBar' id="responsive-navbar-nav">
-                    <Nav className="me-auto" >
-                        {navigationItems}
-                    </Nav>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
+        <Container >
+            <Navbar expand="sm" expanded={expanded} >
+                <Container  >
+                    <MainNavigationItem />
+                    <Navbar.Toggle onClick={onToggleClick} aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse key='collapseableNavBar' id="basic-navbar-nav">
+                        <Nav className="ml-auto"  >
+                            {navigationItems}
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
+        </Container>
     );
 }
