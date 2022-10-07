@@ -16,7 +16,7 @@ const MainNavigationItem = () => {
         </Nav.Item>*/
     return (
         <Link href={routeDescriptions[0].path!} passHref>
-            <Nav.Link className={styles["main-nav-item"]}>
+            <Nav.Link className={styles.mainNavItem}>
                 <MainLogo width="181.56" height='72.947' />
             </Nav.Link>
         </Link>

@@ -14,26 +14,12 @@
     }
 }
 
-.main-nav-item {
+.mainNavItem {
     fill:var(--primary-color);
     stroke: var(--primary-color);
-
-    .main-nav-item-underline {
-        opacity: 0;
-        stroke: var(--accent-color);
-    }
-    &:hover {
-        .main-nav-item-underline {
-            opacity: 1;
-            stroke: var(--primary-color);
-        }
-    }
-    &.active {
-        .main-nav-item-underline {
-            opacity: 1;
-            stroke: var(--accent-color);
-        }
-    }
+    margin-right: 4vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 
 .common-nav-item {

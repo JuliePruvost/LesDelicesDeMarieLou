@@ -18,7 +18,6 @@ export const routeDescriptions: RouteDescription[] = [
     createRouteDescription('Boutique', 'boutique'),
     createRouteDescription('Marché', 'marche'),
     createRouteDescription('Contact', 'contact'),
-    // createRouteDescription('PRINT', 'print', <ResumeView />)
 ];
 
 export default routeDescriptions;

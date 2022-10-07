@@ -17,7 +17,7 @@ if (isGithubActions) {
 const nextConfig = {
     images: {
         loader: "akamai",
-        path: "",
+        path: "/",
     },
     assetPrefix: assetPrefix,
     basePath: basePath,
