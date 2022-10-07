@@ -1,0 +1,18 @@
+
+.contactForm {
+    max-width: 600px;
+    margin: 0px auto;
+    padding: 12px;
+    // padding: 100px 0px;
+}
+
+
+.pageTitle {
+    margin-bottom: 32px;
+    color: var(--primary-color);
+    font-family: Times;
+    font-size: 3rem;
+    @media screen and (max-width: 480px) {
+        font-size: 1.6rem;
+    }
+}

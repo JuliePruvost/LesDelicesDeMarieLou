@@ -1,29 +1,43 @@
-.nav-link.active {
-    text-decoration: underline;
-    text-decoration-color: var(--accent-color);
-    text-underline-offset: 8px;
-}
+:global(.navbar-nav) {
+    .commonNavItem {
+        &:global(.nav-link) {
+            font-size: larger;
+            color: var(--primary-color);
 
-.nav-link:hover {
-    color: var(--primary-color);
-    text-decoration: underline;
-    text-decoration-color: var(--primary-color);
-    text-underline-offset: 8px;
-    &.active {
-        text-decoration-color: var(--accent-color);
+            &:global(.active) {
+                text-decoration: underline;
+                text-decoration-color: var(--accent-color);
+                text-underline-offset: 8px;
+                color: var(--accent-color);
+            }
+
+            &:hover {
+                color: var(--primary-color);
+                text-decoration: underline;
+                text-decoration-color: var(--primary-color);
+                text-underline-offset: 8px;
+                &:global(.active) {
+                    text-decoration-color: var(--accent-color);
+                    color: var(--accent-color);
+                }
+            }
+        }
     }
 }
 
 .mainNavItem {
-    fill:var(--primary-color);
-    stroke: var(--primary-color);
+    color: var(--primary-dark-color);
+    fill: var(--primary-dark-color);
+    stroke: var(--primary-dark-color);
     margin-right: 4vw;
     margin-top: 2vh;
     margin-bottom: 2vh;
-}
 
-.common-nav-item {
-    // padding-top: 23px;
+    &:global(.active) {
+        color: var(--accent-color);
+        fill: var(--accent-color);
+        stroke: var(--accent-color);
+    }
 }
 
 .nav {

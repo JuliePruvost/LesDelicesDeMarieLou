@@ -4,7 +4,7 @@
     margin-top: auto;
     padding: 24px;
     background-color: var(--primary-dark-color);
-    color: var(--primary-dark-contrast-color);;
+    color: var(--primary-dark-contrast-color);
     font-size: small;
 }
 
@@ -21,6 +21,7 @@
     margin-left: auto;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 8px;
 }
 

@@ -1,6 +1,6 @@
 import '../styles/global.scss'
+import '../styles/bootstrapCustom.scss'
 import type { AppProps } from 'next/app'
-import 'bootstrap/dist/css/bootstrap.css';
 import SSRProvider from 'react-bootstrap/SSRProvider';
 import Header from '../components/layout/header/Header';
 import BodyWrapper from '../components/layout/wrappers/BodyWrapper';

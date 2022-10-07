@@ -1,0 +1,44 @@
+
+
+$jp-primary-color: #4ca5c8;
+$jp-primary-dark-color: #4ca5c8;
+$jp-primary-dark-contrast-color: white;
+$jp-accent-color: #E0833C;
+
+
+:root {
+    --primary-color: #{$jp-primary-color};
+    --primary-color-l10: #{lighten($jp-primary-color, 10)};
+    --primary-color-l20: #{lighten($jp-primary-color, 20)};
+    --primary-color-l30: #{lighten($jp-primary-color, 30)};
+    --primary-dark-color: #{$jp-primary-dark-color};
+    --primary-dark-contrast-color: #{$jp-primary-dark-contrast-color};
+    --accent-color: #{$jp-accent-color};
+}
+
+/* COMPONENT */
+// input
+$input-group-addon-bg: white;
+$input-group-addon-color: $jp-primary-color;
+$input-border-radius: 0px;
+// button
+$btn-border-radius: 0px;
+// navigation
+$nav-link-font-weight: 700;
+
+.form-group.required  {
+    .form-label:after {
+        content:" *";
+        color:$jp-accent-color;
+    }
+
+    .input-group-text:after {
+        content:" *";
+        color:$jp-accent-color;
+        margin-left: 4px;
+    }
+}
+
+// import 'bootstrap/dist/css/bootstrap.css';
+// @import "~bootstrap/scss/bootstrap";
+@import '/node_modules/bootstrap/scss/bootstrap.scss';

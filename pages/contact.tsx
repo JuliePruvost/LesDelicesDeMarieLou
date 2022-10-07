@@ -1,8 +1,9 @@
+import ContactView from 'components/pages/contact/ContactView'
 import type { NextPage } from 'next'
 
 const ContactPage: NextPage = () => {
     return (
-        <div>Veuillez nous laisser un message</div>
+        <ContactView />
     );
 }
 
