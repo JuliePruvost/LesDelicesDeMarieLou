@@ -24,7 +24,7 @@ const Home: NextPage = () => {
 
             <main>
                 <ScreenWideImage
-                    src="/boutique_large.jpeg"
+                    src={boutique_large}
                     alt="accueil les delices de marie lou"
                     maxHeight="400px"
                     objectPosition="50% 20%"

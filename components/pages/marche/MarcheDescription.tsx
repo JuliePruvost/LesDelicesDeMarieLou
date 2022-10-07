@@ -4,6 +4,7 @@ import MapWrapper from "../../map/MapWrapper";
 import flexStyles from '../../layout/flex/HorizontalNoWrapFlex.module.scss';
 import textStyles from '../../text/Text.module.scss';
 import { BoldSpan } from "../../text/Text";
+import marche from '/public/marche/marche.jpg'
 
 const position = {
     lat: 48.88174,
@@ -16,7 +17,7 @@ export default function MarcheDescription() {
     return (
         <>
             <div>
-                <Image src="/marche/marche.jpg" alt="Marché" priority />
+                <Image src={marche} alt="Marché" priority />
             </div>
             <HorizontalNoWrapFlex>
                 <div className={flexStyles.flexItemWithBaseSize} >
