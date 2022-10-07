@@ -1,10 +1,26 @@
 .citation {
     font-style: italic;
     font-size: larger;
+    font-weight: 400;
+    // color: var(--accent-color);
+
+    @media screen and (max-width: 600px) {
+        font-size: 1em;
+    }
+    @media screen and (max-width: 480px) {
+        font-size: 0.8em;
+    }
 }
 
 .description {
     font-size: larger;
+
+    @media screen and (max-width: 600px) {
+        font-size: 1em;
+    }
+    @media screen and (max-width: 480px) {
+        font-size: 0.8em;
+    }
 }
 
 .boldSpan {
@@ -13,4 +29,17 @@
 
 .rightAlign {
     text-align: end;
+}
+
+.sectionTitle {
+    text-align: left;
+    // color: var(--primary-color);
+    font-size: larger;
+    font-weight: bolder;
+    // text-decoration: underline;
+    // text-decoration-color: var(--accent-color);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 12px;
+    margin-bottom: 2vh;
+
 }

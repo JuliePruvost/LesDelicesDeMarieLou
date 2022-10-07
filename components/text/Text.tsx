@@ -23,3 +23,11 @@ export function BoldSpan({content}: {content: string}) {
         </span>
     );
 }
+
+export function SectionTitle({content}: {content: string}) {
+    return (
+        <div className={styles.sectionTitle}>
+            {content}
+        </div>
+    );
+}

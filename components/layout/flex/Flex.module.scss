@@ -7,3 +7,9 @@
 .flexItemWithBaseSize {
     flex: 1 1 0;
 }
+
+.verticalFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}

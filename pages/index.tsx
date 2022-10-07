@@ -1,3 +1,4 @@
+import MainView from "components/pages/main/MainView";
 import type { NextPage } from "next";
 import Head from "next/head";
 import ScreenWideImage from "../components/layout/image/ScreenWideImage";
@@ -30,8 +31,7 @@ const Home: NextPage = () => {
                     objectPosition="50% 20%"
                 />
                 <ContentWrapper>
-                    <LesDelicesDescription />
-                    <FoodGallery />
+                    <MainView />
                 </ContentWrapper>
             </main>
         </div>

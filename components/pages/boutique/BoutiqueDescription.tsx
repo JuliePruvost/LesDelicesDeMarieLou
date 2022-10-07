@@ -1,7 +1,7 @@
-import HorizontalNoWrapFlex from "../../layout/flex/HorizontalNoWrapFlex";
+import { HorizontalNoWrapFlex } from "../../layout/flex/Flex";
 import Image from "../../layout/image/Image";
 import MapWrapper from "../../map/MapWrapper";
-import flexStyles from '../../layout/flex/HorizontalNoWrapFlex.module.scss';
+import flexStyles from '../../layout/flex/Flex.module.scss';
 import textStyles from '../../text/Text.module.scss';
 import { BoldSpan } from "../../text/Text";
 import boutique from '/public/boutique/_boutique2.jpeg';
