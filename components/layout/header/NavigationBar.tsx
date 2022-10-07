@@ -6,6 +6,7 @@ import { mainRoute, routeDescriptions } from "./Routes";
 import styles from './NavigationBar.module.scss';
 import { useState } from "react";
 import Link from "next/link";
+import MainLogo from "components/icons/MainLogo";
 
 const MainNavigationItem = () => {
     /*<Nav.Item>
@@ -16,7 +17,7 @@ const MainNavigationItem = () => {
     return (
         <Link href={routeDescriptions[0].path!} passHref>
             <Nav.Link className={styles["main-nav-item"]}>
-                Les Délices de Marie Lou
+                <MainLogo width="181.56" height='72.947' />
             </Nav.Link>
         </Link>
     );

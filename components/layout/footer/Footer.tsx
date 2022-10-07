@@ -76,7 +76,7 @@ export default function Footer() {
                 <div className={styles.footerInformation} style={{marginLeft: '4vh'}}>
                     <ul>
                         <li>
-                            Marhé Puteaux Chantecoq
+                            Marché Puteaux Chantecoq
                         </li>
                         <li>
                             Dimanche
