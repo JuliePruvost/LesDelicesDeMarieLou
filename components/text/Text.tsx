@@ -1,3 +1,4 @@
+import React, { ReactNode } from 'react';
 import styles from './Text.module.scss';
 
 export function Citation({content}: {content: string}) {
@@ -13,6 +14,14 @@ export function Description({content}: {content: string}) {
         <p className={styles.description}>
             {content}
         </p>
+    );
+}
+
+export function DescriptionWithChildren({children}: {children: ReactNode}) {
+    return (
+        <div className={styles.description}>
+            {children}
+        </div>
     );
 }
 

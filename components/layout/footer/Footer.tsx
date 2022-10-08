@@ -2,10 +2,13 @@ import styles from './Footer.module.scss';
 import FacebookIcon from '../../icons/FacebookIcon';
 import InstagramIcon from '../../icons/InstagramIcon';
 import GoogleBusinessIcon from '../../icons/GoogleBusinessIcon';
+import LocationIcon from 'components/icons/LocationIcon';
+import TimeIcon from 'components/icons/TimeIcon';
 
+const smallIconWidth = '16';
+const smallIconHeight = '16';
 const iconWidth = '32';
 const iconHeight = '32';
-const iconColor = 'black';
 
 const instagramLink = (
     <a 
@@ -50,6 +53,7 @@ export default function Footer() {
                 <div className={styles.footerInformation}>
                     <ul>
                         <li>
+                            <span className={styles.footerSmallIcon}><LocationIcon height={smallIconHeight} width={smallIconWidth} /></span>
                             Les Délices de Marie Lou
                         </li>
                         <li>
@@ -69,6 +73,7 @@ export default function Footer() {
                             Lundi au Vendredi
                         </li>
                         <li>
+                            <span className={styles.footerSmallIcon}><TimeIcon height={smallIconHeight} width={smallIconWidth} /></span>
                             10h - 15h
                         </li>
                     </ul>
@@ -82,6 +87,7 @@ export default function Footer() {
                             Dimanche
                         </li>
                         <li>
+                            <span className={styles.footerSmallIcon}><TimeIcon height={smallIconHeight} width={smallIconWidth} /></span>
                             8h - 13h
                         </li>
                     </ul>

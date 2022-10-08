@@ -4,7 +4,16 @@
     margin-top: auto;
     background-color: var(--primary-color);
     color: var(--primary-dark-contrast-color);
-    font-size: small;
+    font-size: medium;
+    @media screen and (max-width: 600px) {
+        font-size: 0.8em;
+    }
+    @media screen and (max-width: 480px) {
+        font-size: 0.7em;
+    }
+    @media screen and (max-width: 400px) {
+        font-size: 0.6em;
+    }
 }
 
 .footerContent {
@@ -14,7 +23,7 @@
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-    gap: 2vw;
+    gap: 1vw;
 }
 
 .footerSocialContent {
@@ -29,6 +38,13 @@
     width: 32px;
     height: 32px;
     fill: var(--primary-dark-contrast-color);
+}
+
+.footerSmallIcon {
+    width: 16px;
+    height: 16px;
+    fill: var(--primary-dark-contrast-color);
+    margin-right: 0.5vw;
 }
 
 .footerInformation {

@@ -1,9 +1,8 @@
 import MainView from "components/pages/main/MainView";
+import WideScreenImage from "components/pages/main/WideScreenImage";
 import type { NextPage } from "next";
 import Head from "next/head";
-import ScreenWideImage from "../components/layout/image/ScreenWideImage";
 import ContentWrapper from "../components/layout/wrappers/ContentWrapper";
-import boutique_large from '/public/boutique_large.jpeg'
 
 const Home: NextPage = () => {
     return (
@@ -22,13 +21,8 @@ const Home: NextPage = () => {
             </Head>
 
             <main>
-                <ScreenWideImage
-                    src={boutique_large}
-                    alt="accueil les delices de marie lou"
-                    maxHeight="400px"
-                    objectFit="cover"
-                    objectPosition="0 0"
-                />
+                <div style={{height:'0vh'}}></div>
+                <WideScreenImage />
                 <ContentWrapper>
                     <MainView />
                 </ContentWrapper>

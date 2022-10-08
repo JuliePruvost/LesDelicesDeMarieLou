@@ -1,24 +1,30 @@
+$active-color: var(--accent-color);
+$inactive-color: var(--primary-color);
+
 :global(.navbar-nav) {
     .commonNavItem {
+        margin: 0 1vw;
+        font-family:  'Garamond', 'Baskerville', 'Baskerville Old Face', 'Times New Roman', serif;
+
         &:global(.nav-link) {
             font-size: larger;
-            color: var(--primary-color);
+            color: $inactive-color;
 
             &:global(.active) {
                 text-decoration: underline;
-                text-decoration-color: var(--accent-color);
+                text-decoration-color: $active-color;
                 text-underline-offset: 8px;
-                color: var(--accent-color);
+                color: $active-color;
             }
 
             &:hover {
-                color: var(--primary-color);
+                color: $active-color;
                 text-decoration: underline;
-                text-decoration-color: var(--primary-color);
+                text-decoration-color: $active-color;
                 text-underline-offset: 8px;
                 &:global(.active) {
-                    text-decoration-color: var(--accent-color);
-                    color: var(--accent-color);
+                    text-decoration-color: $active-color;
+                    color: $active-color;
                 }
             }
         }
@@ -26,17 +32,23 @@
 }
 
 .mainNavItem {
-    color: var(--primary-color);
-    fill: var(--primary-color);
-    stroke: var(--primary-color);
+    color: $inactive-color;
+    fill: $inactive-color;
+    stroke: $inactive-color;
     margin-right: 4vw;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 
+    
     &:global(.active) {
-        color: var(--accent-color);
-        fill: var(--accent-color);
-        stroke: var(--accent-color);
+        color: $active-color;
+        fill: $active-color;
+        stroke: $active-color;
+    }
+    &:hover {
+        color: $active-color;
+        fill: $active-color;
+        stroke: $active-color;
     }
 }
 

@@ -1,6 +1,12 @@
+
+.text {
+    color: var(--primary-dark-color);
+}
+
 .citation {
+    @extend .text;
     font-style: italic;
-    font-size: larger;
+    font-size: large;
     font-weight: 400;
     // color: var(--accent-color);
 
@@ -16,7 +22,8 @@
 }
 
 .description {
-    font-size: larger;
+    @extend .text;
+    font-size: large;
 
     @media screen and (max-width: 600px) {
         font-size: 1em;
@@ -38,10 +45,12 @@
 }
 
 .sectionTitle {
+    @extend .text;
     text-align: left;
     // color: var(--primary-color);
-    font-size: larger;
+    font-size: xx-large;
     font-weight: 500;
+    font-family: 'Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif';
     // text-decoration: underline;
     // text-decoration-color: var(--accent-color);
 

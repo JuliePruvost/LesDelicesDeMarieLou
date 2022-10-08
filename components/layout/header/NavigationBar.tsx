@@ -55,11 +55,11 @@ export default function NavigationBar() {
 
     return (
         <Container >
-            <Navbar expand="sm" expanded={expanded} >
+            <Navbar expand="sm" expanded={expanded}  >
                 <Container  >
                     <MainNavigationItem />
-                    <Navbar.Toggle onClick={onToggleClick} aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse key='collapseableNavBar' id="basic-navbar-nav">
+                    <Navbar.Toggle onClick={onToggleClick} aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse key='collapseableNavBar' id="responsive-navbar-nav">
                         <Nav className="ml-auto"  >
                             {navigationItems}
                         </Nav>

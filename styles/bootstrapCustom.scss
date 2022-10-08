@@ -1,25 +1,31 @@
 
 
-$jp-primary-color: #4ca5c8;
-$jp-primary-dark-color: #1f4351;
-$jp-primary-dark-contrast-color: white;
-$jp-accent-color: #E0833C;
+$primary-color: #4ca5c8;
+$secondary-color: white;
+$secondary-contrast-color: #7e831c;
+$tertiary-color: #faf4e4;
+$primary-dark-color: #28586b;
+$primary-dark-contrast-color: white;
+$accent-color: #f53a15;
 
 
 :root {
-    --primary-color: #{$jp-primary-color};
-    --primary-color-l10: #{lighten($jp-primary-color, 10)};
-    --primary-color-l20: #{lighten($jp-primary-color, 20)};
-    --primary-color-l30: #{lighten($jp-primary-color, 30)};
-    --primary-dark-color: #{$jp-primary-dark-color};
-    --primary-dark-contrast-color: #{$jp-primary-dark-contrast-color};
-    --accent-color: #{$jp-accent-color};
+    --primary-color: #{$primary-color};
+    --secondary-color: #{$secondary-color};
+    --secondary-contrast-color: #{$secondary-contrast-color};
+    --tertiary-color: #{$tertiary-color};
+    --primary-dark-color: #{$primary-dark-color};
+    --primary-dark-contrast-color: #{$primary-dark-contrast-color};
+    --accent-color: #{$accent-color};
 }
+
+$font-family-base: 'Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif';
+
 
 /* COMPONENT */
 // input
 $input-group-addon-bg: white;
-$input-group-addon-color: $jp-primary-color;
+$input-group-addon-color: $primary-color;
 $input-border-radius: 0px;
 // button
 $btn-border-radius: 0px;
@@ -29,12 +35,12 @@ $nav-link-font-weight: 700;
 .form-group.required  {
     .form-label:after {
         content:" *";
-        color:$jp-accent-color;
+        color:$accent-color;
     }
 
     .input-group-text:after {
         content:" *";
-        color:$jp-accent-color;
+        color:$accent-color;
         margin-left: 4px;
     }
 }

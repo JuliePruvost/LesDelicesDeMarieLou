@@ -3,7 +3,7 @@ import Image from "../../layout/image/Image";
 import MapWrapper from "../../map/MapWrapper";
 import flexStyles from '../../layout/flex/Flex.module.scss';
 import textStyles from '../../text/Text.module.scss';
-import { BoldSpan } from "../../text/Text";
+import { BoldSpan, Description, DescriptionWithChildren } from "../../text/Text";
 import boutique from '/public/boutique/_boutique2.jpeg';
 
 const position = {
@@ -21,17 +21,19 @@ export default function BoutiqueDescription() {
             </div>
             <HorizontalNoWrapFlex>
                 <div className={flexStyles.flexItemWithBaseSize} >
-                    <div>
+                    <DescriptionWithChildren>
                         <div className={textStyles.rightAlign}><BoldSpan content='Les Délices de Marie Lou' /></div>
                         <div className={textStyles.rightAlign}>74 rue Jean Bart</div>
                         <div className={textStyles.rightAlign}>Cormeilles en Parisis 95240</div>
                         <div className={textStyles.rightAlign}>Commande au 06141907XX</div>
-                    </div>
+                    </DescriptionWithChildren>
                 </div>
                 <div className={flexStyles.flexItemWithBaseSize} >
-                    <div><BoldSpan content={'Horaires d\'ouverture'} /></div>
-                    <div>du Lundi au Vendredi</div>
-                    <div>10h - 15h</div>
+                    <DescriptionWithChildren>
+                        <div><BoldSpan content={'Horaires d\'ouverture'} /></div>
+                        <div>du Lundi au Vendredi</div>
+                        <div>10h - 15h</div>
+                    </DescriptionWithChildren>
                 </div>
             </HorizontalNoWrapFlex>
             <div style={{display: 'flex', height: '400px'}}>
