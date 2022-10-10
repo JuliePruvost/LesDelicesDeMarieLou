@@ -31,8 +31,9 @@ export default function BoutiqueDescription() {
                 <div className={flexStyles.flexItemWithBaseSize} >
                     <DescriptionWithChildren>
                         <div><BoldSpan content={'Horaires d\'ouverture'} /></div>
-                        <div>du Lundi au Vendredi</div>
-                        <div>10h - 15h</div>
+                        <div>du Mardi au Samedi</div>
+                        <div>11h - 14h</div>
+                        <div>16h - 20h</div>
                     </DescriptionWithChildren>
                 </div>
             </HorizontalNoWrapFlex>

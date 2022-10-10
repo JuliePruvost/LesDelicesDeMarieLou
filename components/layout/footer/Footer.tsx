@@ -67,14 +67,18 @@ export default function Footer() {
                 <div className={styles.footerInformation} style={{marginLeft: '4vh'}}>
                     <ul>
                         <li>
-                            Boutique
+                            Traiteur
                         </li>
                         <li>
-                            Lundi au Vendredi
+                            Mardi au Samedi
                         </li>
                         <li>
                             <span className={styles.footerSmallIcon}><TimeIcon height={smallIconHeight} width={smallIconWidth} /></span>
-                            10h - 15h
+                            11h - 14h
+                        </li>
+                        <li>
+                            <span className={styles.footerSmallIcon}><TimeIcon height={smallIconHeight} width={smallIconWidth} /></span>
+                            16h - 20h
                         </li>
                     </ul>
                 </div>
