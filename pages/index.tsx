@@ -1,6 +1,6 @@
-import Head from "components/head";
-import MainView from "components/pages/main/MainView";
-import WideScreenImage from "components/pages/main/WideScreenImage";
+import Head from "../components/head";
+import MainView from "../components/pages/main/MainView";
+import WideScreenImage from "../components/pages/main/WideScreenImage";
 import type { NextPage } from "next";
 import ContentWrapper from "../components/layout/wrappers/ContentWrapper";
 
