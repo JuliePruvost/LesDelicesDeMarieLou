@@ -1,4 +1,4 @@
-import Head from "../components/head";
+import Head from "../components/Head";
 import MainView from "../components/pages/main/MainView";
 import WideScreenImage from "../components/pages/main/WideScreenImage";
 import type { NextPage } from "next";

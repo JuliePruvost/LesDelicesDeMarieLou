@@ -1,4 +1,4 @@
-import Head from '../components/head';
+import Head from '../components/Head';
 import type { NextPage } from 'next'
 import ContentWrapper from '../components/layout/wrappers/ContentWrapper';
 import MarcheDescription from '../components/pages/marche/MarcheDescription';
