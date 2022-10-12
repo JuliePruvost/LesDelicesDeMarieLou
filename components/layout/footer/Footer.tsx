@@ -50,51 +50,53 @@ export default function Footer() {
     return (
         <div className={styles.footer}>
             <div className={styles.footerContent}>
-                <div className={styles.footerInformation}>
-                    <ul>
-                        <li>
-                            <span className={styles.footerSmallIcon}><LocationIcon height={smallIconHeight} width={smallIconWidth} /></span>
-                            Les Délices de Marie Lou
-                        </li>
-                        <li>
-                            74 rue Jean Bart
-                        </li>
-                        <li>
-                            Cormeilles en Parisis 95240
-                        </li>
-                    </ul>
-                </div>
-                <div className={styles.footerInformation} style={{marginLeft: '4vh'}}>
-                    <ul>
-                        <li>
-                            Traiteur
-                        </li>
-                        <li>
-                            Mardi au Samedi
-                        </li>
-                        <li>
-                            <span className={styles.footerSmallIcon}><TimeIcon height={smallIconHeight} width={smallIconWidth} /></span>
-                            11h - 14h
-                        </li>
-                        <li>
-                            <span className={styles.footerSmallIcon}><TimeIcon height={smallIconHeight} width={smallIconWidth} /></span>
-                            16h - 20h
-                        </li>
-                    </ul>
-                </div>
-                <div className={styles.footerInformation} style={{marginLeft: '4vh'}}>
-                    <ul>
-                        <li>
-                            Marché Puteaux Chantecoq
-                        </li>
-                        <li>
-                            Dimanche
-                        </li>
-                        <li>
-                            <span className={styles.footerSmallIcon}><TimeIcon height={smallIconHeight} width={smallIconWidth} /></span>
-                            8h - 13h
-                        </li>
-                    </ul>
+                <div className={styles.footerDescriptionContent}>
+                    <div className={styles.footerInformation + ' ' + styles.optional}>
+                        <ul>
+                            <li>
+                                <span className={styles.footerSmallIcon}><LocationIcon height={smallIconHeight} width={smallIconWidth} /></span>
+                                Les Délices de Marie Lou
+                            </li>
+                            <li>
+                                74 rue Jean Bart
+                            </li>
+                            <li>
+                                Cormeilles en Parisis 95240
+                            </li>
+                        </ul>
+                    </div>
+                    <div className={styles.footerInformation} >
+                        <ul>
+                            <li>
+                                Traiteur
+                            </li>
+                            <li>
+                                Mardi au Samedi
+                            </li>
+                            <li>
+                                <span className={styles.footerSmallIcon}><TimeIcon height={smallIconHeight} width={smallIconWidth} /></span>
+                                11h - 14h
+                            </li>
+                            <li>
+                                <span className={styles.footerSmallIcon}><TimeIcon height={smallIconHeight} width={smallIconWidth} /></span>
+                                16h - 20h
+                            </li>
+                        </ul>
+                    </div>
+                    <div className={styles.footerInformation} >
+                        <ul>
+                            <li>
+                                Marché Puteaux Chantecoq
+                            </li>
+                            <li>
+                                Dimanche
+                            </li>
+                            <li>
+                                <span className={styles.footerSmallIcon}><TimeIcon height={smallIconHeight} width={smallIconWidth} /></span>
+                                8h - 13h
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div className={styles.footerSocialContent}>
                     {facebookLink}

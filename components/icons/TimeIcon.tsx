@@ -1,9 +1,7 @@
 import React from "react";
 
-const FacebookIcon = ({ width, height }: { width: string; height: string }) => (
+const TimeIcon = ({ width, height }: { width: string; height: string }) => (
     <svg
-        width={width}
-        height={height}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 512 512"
     >
@@ -11,4 +9,4 @@ const FacebookIcon = ({ width, height }: { width: string; height: string }) => (
     </svg>
 );
 
-export default FacebookIcon;
+export default TimeIcon;

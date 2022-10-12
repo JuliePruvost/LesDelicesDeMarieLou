@@ -1,6 +1,6 @@
 import React from "react";
 
-const FacebookIcon = ({ width, height }: { width: string; height: string }) => (
+const LocationIcon = ({ width, height }: { width: string; height: string }) => (
     <svg
         width={width}
         height={height}
@@ -11,4 +11,4 @@ const FacebookIcon = ({ width, height }: { width: string; height: string }) => (
     </svg>
 );
 
-export default FacebookIcon;
+export default LocationIcon;

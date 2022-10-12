@@ -23,7 +23,14 @@
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-    gap: 1vw;
+    gap: 2vw;
+}
+
+.footerDescriptionContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2vw;
 }
 
 .footerSocialContent {
@@ -44,13 +51,40 @@
     width: 16px;
     height: 16px;
     fill: var(--primary-dark-contrast-color);
-    margin-right: 0.5vw;
+    margin-right: 4px;
+    padding-top: 4px;
+
+    > svg {
+        width: 16px;
+        height: 16px;
+        margin-bottom: 2px;
+    }
+
+    @media screen and (max-width: 400px) {
+        width: 12px;
+        height: 12px;
+
+        > svg {
+            width: 12px;
+            height: 12px;
+            margin-bottom: 2px;
+        }
+    }
+
+    
 }
 
 .footerInformation {
+    flex: 1 1 0;
     ul {
         margin: 0px;
         padding: 0px;
         list-style: none;
+    }
+}
+
+.optional {
+    @media screen and (max-width: 400px) {
+        display: none;
     }
 }
