@@ -64,3 +64,44 @@
         font-size: 0.8em;
     }
 }
+
+.subSectionTitle {
+    @extend .text;
+    text-align: left;
+    // color: var(--primary-color);
+    font-size: x-large;
+    // font-weight: 500;
+    font-family: 'Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif';
+    // text-decoration: underline;
+    // text-decoration-color: var(--accent-color);
+    margin-bottom: 0.8em;
+    margin-left: 2em;
+
+    @media screen and (max-width: 600px) {
+        font-size: 1em;
+    }
+    @media screen and (max-width: 480px) {
+        font-size: 0.9em;
+    }
+    @media screen and (max-width: 400px) {
+        font-size: 0.8em;
+    }
+}
+
+.foodListTitle {
+    text-align: center;
+    margin-bottom: 1vh;
+    font-size: larger;
+
+}
+
+.foodList {
+    padding: 0;
+
+    & > li {
+        font-style: italic;
+        list-style-type: none;
+        list-style-type: none;
+        text-align: center;
+    }
+}

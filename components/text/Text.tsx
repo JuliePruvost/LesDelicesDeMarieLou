@@ -40,3 +40,25 @@ export function SectionTitle({content}: {content: string}) {
         </div>
     );
 }
+
+export function SubSectionTitle({content}: {content: string}) {
+    return (
+        <div className={styles.subSectionTitle}>
+            {content}
+        </div>
+    );
+}
+
+export function FoodList({title, children}: {title: string, children: ReactNode}) {
+    return (
+        <>
+            <div className={styles.foodListTitle}>
+                {title}
+            </div>
+            <ul className={styles.foodList}>
+                {children}
+            </ul>
+        
+        </>
+    );
+}
