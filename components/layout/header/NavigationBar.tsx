@@ -29,7 +29,9 @@ export default function NavigationBar() {
             <Navbar.Brand style={{justifyContent: "center"}}>
                 <Link href={routeDescription.path!} passHref>
                     <Nav.Link active={router.pathname === routeDescription.path} className={styles.mainNavItem}>
-                        <MainLogo width="181.56" height='72.947' />
+                        <div>
+                            <MainLogo width="271.54" height='27.631' />
+                        </div>
                     </Nav.Link>
                 </Link>
             </Navbar.Brand>

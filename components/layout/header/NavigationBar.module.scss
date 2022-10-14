@@ -1,5 +1,5 @@
 $active-color: var(--accent-color);
-$inactive-color: var(--primary-color);
+$inactive-color: var(--primary-dark-color);
 
 :global(.navbar-nav) {
     .commonNavItem {
@@ -35,10 +35,8 @@ $inactive-color: var(--primary-color);
     color: $inactive-color;
     fill: $inactive-color;
     stroke: $inactive-color;
-    margin-right: 4vw;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-
+    margin-right: 2vw;
+    margin-bottom: 19px;
     
     &:global(.active) {
         color: $active-color;

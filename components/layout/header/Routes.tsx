@@ -17,6 +17,7 @@ export const routeDescriptions: RouteDescription[] = [
     createRouteDescription('Notre Cuisine', '/cuisine'),
     createRouteDescription('Traiteur', '/traiteur'),
     createRouteDescription('Marché', '/marche'),
+    createRouteDescription('Evènement', '/evenement'),
     createRouteDescription('Contact', '/contact'),
 ];
 
