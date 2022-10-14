@@ -1,9 +1,7 @@
 import React from "react";
 
-const MainLogo = ({ width, height }: { width: string; height: string }) => (
+const MainLogo = () => (
     <svg
-        width={width}
-        height={height}
         viewBox="0 0 271.54 27.631"
         xmlns="http://www.w3.org/2000/svg"
     >

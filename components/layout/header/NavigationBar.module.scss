@@ -37,6 +37,13 @@ $inactive-color: var(--primary-dark-color);
     stroke: $inactive-color;
     margin-right: 2vw;
     margin-bottom: 19px;
+    width:271.54px;
+    height:27.631px;
+
+    @media screen and (max-width: 600px) {
+        width:217.23px;
+        height:22.10px;
+    }
     
     &:global(.active) {
         color: $active-color;

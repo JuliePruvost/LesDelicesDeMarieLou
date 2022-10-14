@@ -15,9 +15,6 @@ export default function LesDelicesDescription() {
         <VerticalFlex >
             <HorizontalNoWrapFlex >
                 <div className={flexStyles.flexItemWithBaseSize} >
-                    <Image src={evenement} alt="plat" priority />
-                </div>
-                <div className={flexStyles.flexItemWithBaseSize} >
                     <VerticalFlex >
                         <SectionTitle content="Traiteur à domicile" />
                         <div>
@@ -25,6 +22,9 @@ export default function LesDelicesDescription() {
                             <Description content={text2}  />
                         </div>
                     </VerticalFlex>
+                </div>
+                <div className={flexStyles.flexItemWithBaseSize} >
+                    <Image src={evenement} alt="plat" priority />
                 </div>
             </HorizontalNoWrapFlex>
             <Description content={text3}  />

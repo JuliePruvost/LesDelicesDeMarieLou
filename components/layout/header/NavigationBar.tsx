@@ -30,7 +30,7 @@ export default function NavigationBar() {
                 <Link href={routeDescription.path!} passHref>
                     <Nav.Link active={router.pathname === routeDescription.path} className={styles.mainNavItem}>
                         <div>
-                            <MainLogo width="271.54" height='27.631' />
+                            <MainLogo  />
                         </div>
                     </Nav.Link>
                 </Link>
