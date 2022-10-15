@@ -5,6 +5,7 @@ import flexStyles from '../../layout/flex/Flex.module.scss';
 import textStyles from '../../text/Text.module.scss';
 import { BoldSpan, Description, DescriptionWithChildren } from "../../text/Text";
 import boutique from '/public/boutique/_boutique2.jpeg';
+import traiteur from '/public/boutique/traiteur2.jpg';
 
 const position = {
     lat: 48.95862207325106,
@@ -16,8 +17,17 @@ const zoom = 16.25;
 export default function BoutiqueDescription() {
     return (
         <>
+            <DescriptionWithChildren>
+                <div>Nous vous accueillons dans notre boutique de Cormeilles en Parisis, du mardi au samedi, en vous proposant des plats à emporter. Possibilité de se restaurer sur place.</div>
+            </DescriptionWithChildren>
             <div style={{width:'100%'}}>
                 <Image src={boutique} alt="La cuisine" priority width='100%' />
+            </div>
+            <DescriptionWithChildren>
+                <div>Poissons, fruits de mer, viandes, plats végétarien... vous y trouverez une cuisine variée, épicée ou plus douce... Nous modifions notre carte de façon quotidienne.</div>
+            </DescriptionWithChildren>
+            <div style={{width:'100%'}}>
+                <Image src={traiteur} alt="La cuisine" priority width='100%' />
             </div>
             <HorizontalNoWrapFlex>
                 <div className={flexStyles.flexItemWithBaseSize} >

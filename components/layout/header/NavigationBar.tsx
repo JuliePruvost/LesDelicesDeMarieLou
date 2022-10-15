@@ -28,7 +28,7 @@ export default function NavigationBar() {
         return (
             <Navbar.Brand style={{justifyContent: "center"}}>
                 <Link href={routeDescription.path!} passHref>
-                    <Nav.Link active={router.pathname === routeDescription.path} className={styles.mainNavItem}>
+                    <Nav.Link active={router.pathname === routeDescription.path} className={styles.mainNavItem} onClick={onItemClick}>
                         <div>
                             <MainLogo  />
                         </div>
@@ -57,7 +57,7 @@ export default function NavigationBar() {
 
     return (
         <Container >
-            <Navbar expand="sm" expanded={expanded}  >
+            <Navbar expand="md" expanded={expanded}  >
                 <Container  >
                     <MainNavigationItem />
                     <Navbar.Toggle onClick={onToggleClick} aria-controls="responsive-navbar-nav" />

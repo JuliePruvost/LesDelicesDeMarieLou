@@ -10,6 +10,10 @@ $inactive-color: var(--primary-dark-color);
             font-size: larger;
             color: $inactive-color;
 
+            @media screen and (max-width: 600px) {
+                font-size: medium;
+            }
+
             &:global(.active) {
                 text-decoration: underline;
                 text-decoration-color: $active-color;
@@ -36,7 +40,7 @@ $inactive-color: var(--primary-dark-color);
     fill: $inactive-color;
     stroke: $inactive-color;
     margin-right: 2vw;
-    margin-bottom: 19px;
+    margin-bottom: 23px;
     width:271.54px;
     height:27.631px;
 

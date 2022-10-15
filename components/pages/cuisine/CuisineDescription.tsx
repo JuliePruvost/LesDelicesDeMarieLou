@@ -25,7 +25,7 @@ export default function LesDelicesDescription() {
             <SectionTitle content="En cuisine" />
             <Description content={cuisineText}  />
             <div>
-                <Image src={cuisine2} alt="La cuisine" />
+                <Image src={cuisine2} alt="La cuisine" priority />
             </div>
         </VerticalFlex>
     );
